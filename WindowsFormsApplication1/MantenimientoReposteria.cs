@@ -16,5 +16,12 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void btbSalir_Click(object sender, EventArgs e)
+        {
+            Menu ofrm = new Menu();
+            ofrm.Show();
+            this.Hide();
+        }
     }
 }

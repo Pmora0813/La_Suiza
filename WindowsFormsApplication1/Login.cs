@@ -15,17 +15,60 @@ namespace WindowsFormsApplication1
         public Login()
         {
             InitializeComponent();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+        private void btnIngresar_Click(object sender, EventArgs e)
         {
-            Menu m = new Menu();
-            m.Show();
+            //this.txtUsuario.Text = "Coffee";
+            this.txtContraseña.Text = "Soft";
+            if (this.txtUsuario.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Datos incorectos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (this.txtContraseña.Text.Equals(""))
+            {
+                MessageBox.Show(null, "Datos incorectos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (this.txtUsuario.Text.Equals("Coffee") && this.txtContraseña.Text.Equals("Soft"))
+            {
+                Menu m = new Menu();
+                m.Show();
+                this.Hide();
+            }
+            else
+            {
+
+                if (this.txtUsuario.Text.Equals("Coffee1") && this.txtContraseña.Text.Equals("Soft"))
+                {
+                    MenuEmpleado m = new MenuEmpleado();
+                    m.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Datos incorectos.", "Coffe-Soft", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void lnkAyuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("Increse el Usuario y Contraseña correspondientes para ingresar al sistema.", "Infomacion");
         }
     }
 }

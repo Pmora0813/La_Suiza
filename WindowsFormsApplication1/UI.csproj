@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E03A7F0F-6276-4522-AE9F-E1B85402BEDE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adicionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionales.Designer.cs">
+      <DependentUpon>Adicionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coffee_SoftDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coffee_SoftDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="coffee_SoftDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coffee_SoftDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="coffee_SoftDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coffee_SoftDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="coffee_SoftDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coffee_SoftDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="coffee_SoftDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coffee_SoftDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="coffee_SoftDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coffee_SoftDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="coffee_SoftDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coffee_SoftDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="coffee_SoftDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coffee_SoftDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="coffee_SoftDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coffee_SoftDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdministrarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdministrarEmpleados.Designer.cs">
+      <DependentUpon>frmAdministrarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdministrarProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdministrarProveedores.Designer.cs">
+      <DependentUpon>frmAdministrarProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBebedasCalientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBebedasCalientes.Designer.cs">
+      <DependentUpon>frmBebedasCalientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBebidasFrias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBebidasFrias.Designer.cs">
+      <DependentUpon>frmBebidasFrias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLicores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLicores.Designer.cs">
+      <DependentUpon>frmLicores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantEmpleados.Designer.cs">
+      <DependentUpon>frmMantEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoBebidasFrias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoBebidasFrias.Designer.cs">
+      <DependentUpon>frmMantenimientoBebidasFrias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReposteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReposteria.Designer.cs">
+      <DependentUpon>frmReposteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentas.Designer.cs">
+      <DependentUpon>frmVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoBebidasCalientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoBebidasCalientes.Designer.cs">
+      <DependentUpon>MantenimientoBebidasCalientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoReposteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoReposteria.Designer.cs">
+      <DependentUpon>MantenimientoReposteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManteniminetoLicor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManteniminetoLicor.Designer.cs">
+      <DependentUpon>ManteniminetoLicor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEmpleado.Designer.cs">
+      <DependentUpon>MenuEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Adicionales.resx">
+      <DependentUpon>Adicionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdministrarEmpleados.resx">
+      <DependentUpon>frmAdministrarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdministrarProveedores.resx">
+      <DependentUpon>frmAdministrarProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBebedasCalientes.resx">
+      <DependentUpon>frmBebedasCalientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBebidasFrias.resx">
+      <DependentUpon>frmBebidasFrias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLicores.resx">
+      <DependentUpon>frmLicores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantEmpleados.resx">
+      <DependentUpon>frmMantEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoBebidasFrias.resx">
+      <DependentUpon>frmMantenimientoBebidasFrias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReposteria.resx">
+      <DependentUpon>frmReposteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentas.resx">
+      <DependentUpon>frmVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoBebidasCalientes.resx">
+      <DependentUpon>MantenimientoBebidasCalientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoReposteria.resx">
+      <DependentUpon>MantenimientoReposteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManteniminetoLicor.resx">
+      <DependentUpon>ManteniminetoLicor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEmpleado.resx">
+      <DependentUpon>MenuEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="coffee_SoftDataSet.xsc">
+      <DependentUpon>coffee_SoftDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coffee_SoftDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coffee_SoftDataSet.xss">
+      <DependentUpon>coffee_SoftDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet1.xsc">
+      <DependentUpon>coffee_SoftDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coffee_SoftDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coffee_SoftDataSet1.xss">
+      <DependentUpon>coffee_SoftDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet2.xsc">
+      <DependentUpon>coffee_SoftDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coffee_SoftDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coffee_SoftDataSet2.xss">
+      <DependentUpon>coffee_SoftDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet3.xsc">
+      <DependentUpon>coffee_SoftDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coffee_SoftDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coffee_SoftDataSet3.xss">
+      <DependentUpon>coffee_SoftDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet4.xsc">
+      <DependentUpon>coffee_SoftDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coffee_SoftDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coffee_SoftDataSet4.xss">
+      <DependentUpon>coffee_SoftDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet5.xsc">
+      <DependentUpon>coffee_SoftDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coffee_SoftDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coffee_SoftDataSet5.xss">
+      <DependentUpon>coffee_SoftDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet6.xsc">
+      <DependentUpon>coffee_SoftDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coffee_SoftDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coffee_SoftDataSet6.xss">
+      <DependentUpon>coffee_SoftDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet7.xsc">
+      <DependentUpon>coffee_SoftDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coffee_SoftDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coffee_SoftDataSet7.xss">
+      <DependentUpon>coffee_SoftDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet8.xsc">
+      <DependentUpon>coffee_SoftDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="coffee_SoftDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coffee_SoftDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coffee_SoftDataSet8.xss">
+      <DependentUpon>coffee_SoftDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -59,5 +59,17 @@ namespace WindowsFormsApplication1
             Adicional_Lattes ofrm = new Adicional_Lattes();
             ofrm.Show();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MenuEmpleado ofrm = new MenuEmpleado();
+            ofrm.Show();
+            this.Hide();
+        }
     }
 }
